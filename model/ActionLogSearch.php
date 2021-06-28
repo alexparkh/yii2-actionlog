@@ -48,7 +48,7 @@ class ActionLogSearch extends ActionLog
             ->andFilterWhere(['like', 'user_remote', $this->user_remote])
             ->andFilterWhere(['like', 'action', $this->action])
             ->andFilterWhere(['like', 'category', $this->category])
-            ->andFilterWhere(['like', 'message', $this->status])
+            ->andFilterWhere(['like', 'status', $this->status])
             ->andFilterWhere(['like', 'message', $this->message]);
 
         return $dataProvider;
